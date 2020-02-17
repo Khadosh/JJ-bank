@@ -1,10 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var $ = require("jquery");
-// The current card.js code does not explicitly require jQuery, but instead uses the global, so this line is needed.
-window.jQuery = $;
-var card = require("card");
 
 module.exports = {
     entry: {
@@ -27,17 +23,6 @@ module.exports = {
                         ]
                     }
                 }
-            },
-            {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options: { importLoaders: 1 } },
-                    'postcss-loader'
-                ]
-            },
-            {
-                test: /\.scss$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
             },
             {
                 test: /\.(scss)$/,
