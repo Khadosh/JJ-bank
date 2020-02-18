@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 // Navbar
 nav,
 nav .logo,
@@ -43,39 +42,14 @@ nav h1 {
 }
 //**
 
-//Carousel
-.carousel{
-  margin: 0 auto;
-}
-.carousel-inner {
-  width: auto;
-  height: 400px;
-}
-.img {
-  width: auto;
-  height: 400px;
-}
-//**
 
-//Servicios
-.services {
-  margin-top: 50px;
-  justify-content: space-around;
-}
-
-/*#1 {
-  background-image: url(./assests/1.jpg);
-  background-size: cover;
-}*/
-//**
-
-//Sobre nosotros
-.aboutus {
-  margin-top: 70px;
-}
-//**
 
 //Footer
-
-
+footer .footer-container {
+  width: 100%;
+  margin: 60px 0 0 60px;
+}
+footer .footer-container .row {
+  display: block;
+}
 //**
