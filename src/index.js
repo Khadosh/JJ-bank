@@ -1,8 +1,6 @@
 import 'bootstrap';
 import Swal from 'sweetalert2';
+import './../node_modules/card/dist/card';
+import card from './Initialitation/Card';
 
 import './index.scss';
-
-const title = document.getElementById('title');
-
-title.innerText = 'Hola Mundo';
