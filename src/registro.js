@@ -37,7 +37,7 @@ function component() {
   Mujer
 </label>
 </div>
-
+  
 <div class="form-row">
     <div class="form-group col-md-6">
       <label for="documento">Nro. de Documento</label>
