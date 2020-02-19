@@ -17,11 +17,11 @@ function component() {
   <div class="row">
     <div class="col">
     <label for="nombre">Nombre</label>
-      <input type="text" class="form-control" placeholder="Nombre">
+      <input id="nombre" type="text" class="form-control" placeholder="Nombre">
     </div>
     <div class="col">
     <label for="apellido">Apellido</label>
-      <input type="text" class="form-control" placeholder="Apellido">
+      <input id="apellido" type="text" class="form-control" placeholder="Apellido">
     </div>
   </div>
 </form>
@@ -38,6 +38,16 @@ function component() {
 </label>
 </div>
 
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="documento">Nro. de Documento</label>
+      <input type="number" class="form-control" id="documento">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Telefono</label>
+      <input type="number" class="form-control" id="telefono">
+    </div>
+  </div>
       
       <form>
   <div class="form-row">
@@ -62,7 +72,7 @@ function component() {
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">Provincia</label>
-      <select id="inputState" class="form-control">
+      <select id="provincia" class="form-control">
         <option selected> </option>
         <option>Buenos Aires</option>
         <option>Cordoba</option>
@@ -83,6 +93,7 @@ function component() {
   </div>
 </div>
     `
+   
   return element
 }
 document.body.appendChild(component());
