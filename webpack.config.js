@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+    entry: ['bootstrap-loader', '/app/src/index.js'],
     entry: {
-        main: "./src/index.js"
+        main: "./app/src/index.js"
     },
     output: {
         filename: "main.js",
@@ -44,14 +45,14 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg|gif)$/,
                 use: ["file-loader"]
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./public/index.html"
+            template: "./app/public/index.html"
         }),
         new MiniCssExtractPlugin({
             filename: "styles.css"
