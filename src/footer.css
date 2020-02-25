@@ -40,6 +40,13 @@ footer a {
     background-color: #fa3503;
 }
 
+#nosotros:hover{ 
+     background-color: #fa3503;
+}
+
+#nosotros{
+ background-color:  #2e2e29;
+    }
 
 
 .recent-post li label {
