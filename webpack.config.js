@@ -5,7 +5,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: ['bootstrap-loader', '/app/src/index.js'],
     entry: {
-        main: "./app/src/index.js"
+        main: "./app/src/index.js",
+        dashBoard: "./app/src/admin.js",
+        userProfile: "./app/src/profile.js"
     },
     output: {
         filename: "main.js",
@@ -52,7 +54,22 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./app/public/index.html"
+            template: "./app/public/index.html",
+            inject:true,
+            chunks:['main'],
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./app/public/admin.html",
+            inject:true,
+            chunks:['dashBoard'],
+            filename: 'admin.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./app/public/profile.html",
+            inject:true,
+            chunks:['userProfile'],
+            filename: 'profile.html'
         }),
         new MiniCssExtractPlugin({
             filename: "styles.css"
