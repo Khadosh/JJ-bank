@@ -10,7 +10,7 @@ module.exports = {
         userProfile: "./app/src/profile.js"
     },
     output: {
-        filename: "main.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "build")
     },
     module: {
