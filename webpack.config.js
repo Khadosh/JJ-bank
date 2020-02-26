@@ -4,10 +4,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        main: "./src/index.js"
+        main: "./src/asset/js/main.js",
+        prestamo: "./src/asset/js/mainPrestamo.js"
     },
     output: {
-        filename: "main.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "build")
     },
     module: {
@@ -51,7 +52,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./public/index.html"
+            template: "./public/index.html",
+            inject: true,
+            chunks: ['main'],
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./public/indexPrestamo.html",
+            inject: true,
+            chunks: ['prestamo'],
+            filename: 'indexPrestamo.html'
         }),
         new MiniCssExtractPlugin({
             filename: "styles.css"
