@@ -52,12 +52,12 @@ nav h1 {
   margin: 0 auto;
 }
 .carousel-inner {
-  width: 1300px;
+  // width: 1300px;
   height: 500px;
 }
 .img-2{
-  width: 1300px;
-  height: 500px;
+  width: 100vw;
+  height: auto;
 }
 .img {
   width: auto;
@@ -111,9 +111,9 @@ nav h1 {
 
 .header-text  {
   position: absolute;
-   bottom: 5%;
-  left: 1.8%;
-   right: 50%;
+   top: 48%;
+  left: 2%;
+  //  right: 50%;
   width: 96.66666666666666%;
   color: #fff;
  
