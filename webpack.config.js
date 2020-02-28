@@ -47,8 +47,13 @@ module.exports = {
                 }]
             },
             {
+               
                 test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg|gif)$/,
-                use: ["file-loader"]
+                use: [{loader: "file-loader",
+                        options: {
+                            name:'[name].[ext]',
+                            outputPath: 'assets/images'
+                        }}]
             }
         ]
     },
