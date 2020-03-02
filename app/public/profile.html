@@ -1,66 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>JJ BANK</title>
+  <title>JJ BANK</title>
 
 </head>
 
 <body class="bg-gradient-primary">
 
-    <!-- NAVBAR AQUI -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile.html">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="admin.html">Admin</a>
-            </li>
-           
-          </ul>
-        </div>
-      </nav>
+  <!-- NAVBAR AQUI -->
+  <div class="container-fluid">
 
-    <div class="container">
-        <h1>Soy el profile</h1>
-        <div class="row">
-            <div class="col">
-                <!-- CARD 1 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img src="/app/src/assets/img/nuevologo.png" width="30" height="30" alt="">
+      <a class="navbar-brand" href="#">Bank</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Sesion
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal1">Registrate</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Ingreso</a>
+              </div>
             </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </nav>
 
-            <div class="col">
-                <!-- CARD 2 -->
-            </div>
+  <div class="container">
+    <h1>Soy el profile</h1>
+    <div class="row">
+      <div class="col">
+        <!-- CARD 1 -->
+      </div>
 
-            <div class="col">
-                <!-- CARD 3 -->
-            </div>
-        </div>
+      <div class="col">
+        <!-- CARD 2 -->
+      </div>
+
+      <div class="col">
+        <!-- CARD 3 -->
+      </div>
     </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- FOOTER AQUI -->
-            </div>
-        </div>
-    </footer>
-
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- FOOTER AQUI -->
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="/app/src/registro.js"></script>
 </body>
 
 </html>
