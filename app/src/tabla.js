@@ -1,7 +1,7 @@
+var $       = require( 'jquery' );
+var dt      = require( 'datatables.net' )();
+var editor  = require( 'datatables.net-editor' )();
+
 $(document).ready(function() {
-    $('#example').DataTable( {
-        "scrollY":        "200px",
-        "scrollCollapse": true,
-        "paging":         false
-    } );
+    $('#example').DataTable();
 } );
