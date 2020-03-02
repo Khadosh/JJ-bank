@@ -82,7 +82,7 @@ nav h1 {
 //Footer
 
 footer {
-  color: #2e2e29;
+  color: #f27121;
   background-attachment: fixed;
   background-color:white;
   background-size: cover;
@@ -117,16 +117,8 @@ footer a {
   background-color: #0f110c;
 }
 .social-pet li a:hover {
-  background-color: #fa3503;
+  background-color: #f27121;
 }
-
-#nosotros:hover{ 
-   background-color: #fa3503;
-}
-
-#nosotros{
-background-color:  #2e2e29;
-  }
 
 
 .recent-post li label {
@@ -156,17 +148,17 @@ footer .input-group-addon {
 }
 
 @keyframes example {
-  0%   {background-color:#fa3503;}
-25%  {background-color: #fff;}
-50%  {background-color:#fa3503;}
-100% {background-color: #fff;}
+  0%   {background-color:#e94057;}
+25%  {background-color: #8a2387;}
+50%  {background-color:#e94057;}
+100% {background-color: #8a2387;}
 }
 
 @keyframes final {
-  0%   {background-color:#fff;}
-25%  {background-color: #fa3503;}
-50%  {background-color:#fff;}
-100% {background-color:#fa3503;}
+  0%   {background-color:#8a2387;}
+25%  {background-color: #e94057;}
+50%  {background-color:#8a2387;}
+100% {background-color:#e94057;}
 }
 
 
@@ -187,11 +179,6 @@ section{
   animation-iteration-count: infinite;
 }
 
-img{
-
-  width: 180px;
-  height: 200px;
-}
 
 .copyright {
   background-color: #444443;
@@ -201,4 +188,4 @@ font-size:14px;
 
 
 
-//**
+
