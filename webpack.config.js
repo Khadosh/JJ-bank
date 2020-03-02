@@ -8,6 +8,7 @@ module.exports = {
         main: "./app/src/index.js",
         dashBoard: "./app/src/admin.js",
         userProfile: "./app/src/profile.js"
+
     },
     output: {
         filename: "[name].js",
@@ -28,7 +29,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(scss)$/,
+                test: /\.(s?css)$/,
                 use: [{
                     loader: 'style-loader', // inject CSS to page
                 }, {
