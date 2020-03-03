@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  
+
   <title>JJ BANK</title>
 
 </head>
@@ -17,7 +17,7 @@
 
   <!-- NAVBAR AQUI -->
   <nav class="navbar navbar-expand-lg navbar-success" style="background: linear-gradient(to right, #581845 , #900C3F )">
-    <a class="navbar-brand test" href="#">JJBank</a>
+    <a class="navbar-brand test" href="#">JJBank!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,14 +33,39 @@
         <li class="nav-item">
           <a class="nav-link test" href="admin.html">Admin</a>
         </li>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Mario Bross</span>
+            <img class="img-profile rounded-circle" src="../src/assets/background.png">
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+              Perfil
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+              Configuracion
+            </a>
+           
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              Salir
+            </a>
+          </div>
+        </li>
 
       </ul>
     </div>
   </nav>
-
-  <div class=" contenedor">
-    <div class="row">
-      <div class="col-3">
+  <!-- SIDEBAR -->
+  <div class="contenedor">
+    <div class="row d-flex justify-content-between ">
+      <div class="col-2">
         <ul class="navbar-nav  sidebar sidebar-dark accordion"
           style="background: linear-gradient(to right, #581845 , #900C3F )" id="accordionSidebar">
 
@@ -100,12 +125,72 @@
         </ul>
       </div>
     </div>
+      <div class="p-2 bd-highlight">
+
+      <div class="">
+        <!-- Earnings (Monthly) Card Example -->
+
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
-
-
-
-
-  <footer>
+ <footer>
     <div class="container-fluid">
       <div class="row">
         <!-- FOOTER AQUI -->
