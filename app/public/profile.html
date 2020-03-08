@@ -269,6 +269,29 @@
 
                     </div>
                 </div>
+                <div class="card-header bg-gradient-dark py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-white">Conversor de monedas</h6>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="number" class="form-control" id="quantity" placeholder="Cantidad a convertir">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="fromCurrency" placeholder="Desde que criptomoneda/moneda">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="toCurrency" placeholder="A que criptomoneda/moneda">
+                            </div>
+                            <button type="button" class="btn btn-outline-success" id="convert">Convert</button>
+                        </div>
+
+                        <div id="currencyOutput">
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
