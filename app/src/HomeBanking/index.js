@@ -1,26 +1,22 @@
 import CardCliente from './CardClientes'
-const clientes = [{
-  nombre: 'Diego',
-  Apellido: 'Olmi',
-  Dni: '32520202',
-  Email: 'diegolmi@hotmail.com',
-  Direccion: 'Cordoba 605',
-  Ciudad:'San Miguel de Tucuman',
-  Provincia: 'Tucuman',
-}];
-const NuevosClientes = document.getElementById("clientes");
+// import usuariosRegistrados from './logicaRegister'
+
+// const NuevosClientes = usuariosRegistrados[i]
+// const ulClientes = document.getElementById("clientes");
 
 
-export const listarClientes = () => {
+// export const listarClientes = () => {
 
-  NuevosClientes.innerHTML = ""; 
+//   ulClientes.innerHTML = ""; 
 
-  clientes.forEach(function (cliente, index) {
+//   NuevosClientes.forEach(function (cliente, index) {
 
-    NuevosClientes.innerHTML +=  CardCliente(cliente.nombre, cliente.Apellido, cliente.Dni, cliente.Email, cliente.Direccion, cliente.Ciudad, cliente.Provincia)
-  })
+//     ulClientes.innerHTML +=  CardCliente(cliente.nombre, cliente.Apellido, cliente.Dni, cliente.Email, cliente.Direccion, cliente.Ciudad, cliente.Provincia)
+//   })
 
-};
-listarClientes();
+// };
+// listarClientes();
+
+// const listaClientes = 
 
 
