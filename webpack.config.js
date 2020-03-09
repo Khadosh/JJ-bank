@@ -14,7 +14,8 @@ module.exports = {
         footer: './app/src/footer.js',
         login: './app/src/login.js',
         navbar: './app/src/navbar.js',
-        services: './app/src/services.js'
+        services: './app/src/services.js',
+        dineroPrestado: './app/src/dineroPrestado.js'
 
     },
     output: {
