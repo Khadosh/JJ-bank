@@ -7,9 +7,9 @@ const CardCliente = (nombre, Apellido, Dni, Email,  Direccion, Ciudad, Provincia
                 <td>${Direccion}</td>
                 <td>${Ciudad}</td>
                 <td>${Provincia}</td>
+                <td><button type="button" class="btn btn-outline-warning">Enviar</button>
+                <button type="button" class="btn btn-outline-danger">Denegado</button></td>
                 </tr>
-                <button type="button" class="btn btn-outline-warning">Enviar</button>
-                <button type="button" class="btn btn-outline-danger">Denegado</button>
        
  `;
 
